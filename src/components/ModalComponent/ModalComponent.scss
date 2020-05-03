@@ -1,0 +1,52 @@
+@import "../../assets/scss/variables.scss";
+
+.modal {
+  display: flex;
+  flex-direction: row;
+  .modal-dialog{
+    min-width: 600px;
+  }
+  .modal-content{
+    max-width: 550px;
+    // height: 270px;
+    display: flex;
+    flex-direction: row;
+    
+    .leftImg{
+      display: flex;
+      width: 30%;
+      .img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .rightContent{
+      padding: 40px 0 30px 50px;
+      .title{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 3;
+      }
+      .simple{
+        font-size: 11px;
+        margin-right: 15px;
+      }
+      span{
+        font-size: 12px;
+      }
+      .continuelink{
+        justify-content: flex-end;
+        display: flex;
+        margin-top: 5px;
+
+        margin-left: 240px;
+        a{
+          font-weight: 600;
+          cursor: pointer;
+        }
+
+      }
+    }  
+  }
+  
+}

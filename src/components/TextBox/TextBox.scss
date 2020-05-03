@@ -1,0 +1,116 @@
+@import "../../assets/scss/variables.scss";
+
+.textBox {
+  padding: 0;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  //margin-bottom: 15px;
+  .mandatoryMark {
+    color: $RED_ERROR;
+    font-size: $fontSize20;
+    margin-left: 3px;
+    display: inline-block;
+  }
+  .form-label {
+    color: $BLACK_TXT;
+    font-size: $fontSize16;
+    margin: 0;
+  }
+  .title{
+    font-weight: 500  ;
+  }
+
+  .inputBox {
+    position: relative;
+
+    .showHide {
+      position: absolute;
+      top: 14px;
+      right: 0px;
+      font-size: $fontSize16;
+      color: $BORDER_COLOR;
+      cursor: pointer;
+      height: 20px;
+      width: 20px;
+    }
+  }
+
+  .form-control {
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom-width: 2px;
+    border-bottom-color: $BORDER_COLOR;
+    border-color: $BORDER_COLOR;
+    font-size: $fontSize14;
+    font-weight: 200;
+    height: 25px;
+    width: 80%;
+    padding: 6px 0;
+    text-overflow: ellipsis;
+    outline: none;
+    color: $BLACK_TXT;
+    border-radius: 0;
+    font-family: $montMedium;
+
+    &::-webkit-input-placeholder {
+      color: $TXT_PLACEHOLDER;
+    }
+
+    &::-moz-placeholder {
+      color: $TXT_PLACEHOLDER;
+    }
+
+    &:-ms-input-placeholder {
+      color: $TXT_PLACEHOLDER;
+    }
+
+    &:-moz-placeholder {
+      color: $TXT_PLACEHOLDER;
+    }
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+
+    &.form-control:disabled,
+    .form-control[readonly] {
+      background-color: $GREY_DISABLE;
+    }
+
+    &.bordererror {
+      border-bottom-color: $RED_ERROR !important;
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  input::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input::-ms-clear,
+  input::-ms-reveal {
+    display: none;
+  }
+}

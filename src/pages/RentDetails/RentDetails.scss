@@ -1,0 +1,202 @@
+@import "../../assets/scss/variables.scss";
+
+.detailsMain {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  .logoTop {
+    width: 12%;
+    align-self: center;
+    margin-bottom: 70px;
+    .logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .container{
+    align-self: center;
+    width: 60%;
+
+    .cardSec {
+      border: 1px solid #dddddd;
+      border-radius: 6px;
+      width: 100%;
+      margin: 10px 0 10px 0;
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      .imgSec {
+        width: 60%;
+        .carImg {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .content {
+        width: 40%;
+        flex-direction: column;
+        display: flex;
+        padding: 30px 30px 50px 30px;
+        .carIcon {
+          .carName {
+            line-height: 4;
+            font-weight: 600;
+            font-size: $fontSize24;
+          }
+          .iconSec {display: flex;
+            margin-bottom:20px;
+            .icon {
+              height: 15px;
+              filter: invert(55%) sepia(7%) saturate(1041%) hue-rotate(169deg)
+                brightness(91%) contrast(88%);
+                margin-right: 6px;
+            }
+            .eyedropper {
+              display: flex;
+              align-items: center;
+              margin-right: 50px;
+              color: #728396;
+
+            }
+            .seat { 
+              display: flex;
+              align-items: center;
+              color: #728396;
+            }
+          }
+        }
+
+        .priceSec {display: flex;
+          flex-direction: row;
+          margin-bottom: 25px;
+          .price {
+            display: flex;
+            align-items: center;
+            .rupeesicon {
+              height: 15px;
+            }
+          }
+        }
+        .btnSec {
+          display: flex;
+          flex-direction: row;
+          position: relative;
+          .btnComponentMain {
+            button {
+              padding: 11px 18px;
+              font-size: 14px;
+            }
+          }
+          .error{
+            align-self: flex-end;
+                        font-size: $fontSize12;
+            color: $RED_ERROR;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
+    .detailSec{
+      margin-top: 40px;
+      align-self: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .title{
+        font-size: 22px;
+        line-height: 2;
+        color: #728396;
+        font-weight: 500;
+        border-bottom: 1px solid #798A9B;
+        display: block; 
+      }
+      .btnComponentMain {
+        width: 20%;
+        margin-top: 30px;
+        button {
+          padding: 11px 18px;
+          font-size: 14px;
+          margin-bottom: 15px;
+        }
+      }
+      span{
+        padding: 10px 0;
+      }
+      .tableSec{
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #e6e6e6;
+        .namesec , .nosec , .datesec{
+          display: flex;
+        flex-direction: column;
+        width: 30%;
+        }
+        .namesec{
+          width: 40%;
+        }
+        .nosec{
+          width: 40%;
+        }
+        .bluetitle{
+          color: #728396;
+        font-weight: 500;
+        font-size: 14px;
+        margin: 10px 0;
+        }
+        span{
+          margin: 6px 0;
+          font-size: 12px;
+        }
+      }
+
+    }
+
+    
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    width: 75%;
+    align-self: center;
+    .title{
+      font-size: 22px;
+      line-height: 3;
+    }
+    .addreess{
+      width: 30%;
+      margin-top: 10px;
+    }
+    .socialIcon{
+      display: flex;
+      flex-direction: row;
+      margin-top: 15px;
+      .socicon{
+        height: 18px;
+        margin-right: 50px;
+      }
+    }
+    .lastSec{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top:30px;
+      margin-bottom:30px;
+      .leftPart{
+span{
+margin-right: 30px;  
+}
+      }
+      .rightPart{
+        span{
+          margin-right: 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+ 
+}

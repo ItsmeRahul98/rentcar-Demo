@@ -1,0 +1,91 @@
+// Color
+$colorLightBlack: #3d3d3d;
+$colorTableBorder: #e9ebf2;
+
+// Bg Color
+$BG_WHITE: #ffffff;
+$BG_YELLOW: #ffcd4c;
+$BG_LIGHTYELLOW: #fff4d5;
+$BG_GREYLIGHT: #e5e5e5;
+$BG_GREY: #bac0c6;
+$BG_REDWARNING: #ffe5e5;
+$BG_GREENSUCCESS: #edf3e5;
+$BG_BLUE: #5ac4ee;
+$PRIMARY_PURPLE: #512e9a;
+$PURPLE_LIGHT: #bfa1ff;
+$BG_VERYBLUE: rgba(90, 196, 238, 0.08);
+$BG_PUREBLACK: #000000;
+$BG_GREYDARKLIGHT: #f5f5f5;
+$BG_GREYLIGHTTOGGLE: #f1eded;
+$BG_ICONGREY: #c4c4c4;
+$BG_LIGHTRED: #ffd2d2;
+$BG_LIGHTGREEN: #c6f0e9;
+$BG_LIGHTORANGE: #ffddc4;
+$BG_ORANGE: #ff8d3a;
+
+// Text Color
+$WHITE_TXT: #ffffff;
+$GREY_TXT: #bac0c6;
+$PURPLE_TXT: #512e9a;
+$BLUE_TXT: #5ac4ee;
+$BLACK_TXT: #444444;
+$GREEN_TXT: #40cdb6;
+$RED_TXT: #ff6a69;
+$YELLOW_TXT: #fdc82c;
+$ORANGE_TXT: #ff8d3a;
+$RED_ERROR: #ff0000;
+$GREYDARK_TXT: #a2a2a2;
+$GREYMOREDARK_TXT: #6b6b6b;
+$BLUE_LINK: #0a9efc;
+$TXT_PLACEHOLDER: #939393;
+$BORDER_COLOR: #bac0c6;
+$GREEN_SUCCESSTXT: #498900;
+$BORDER_VERYLIGHTGREY: #e9ebf2;
+$GREY_DISABLE: #f5f5f5;
+
+// Font Size
+$fontSize10: 10px;
+$fontSize11: 11px;
+$fontSize12: 12px;
+$fontSize13: 13px;
+$fontSize14: 14px;
+$fontSize15: 15px;
+$fontSize16: 16px;
+$fontSize18: 18px;
+$fontSize20: 20px;
+$fontSize22: 22px;
+$fontSize24: 24px;
+$fontSize28: 28px;
+$fontSize30: 30px;
+$fontSize36: 36px;
+
+$montMedium: "montserratmedium";
+$montRegular: "montserratregular";
+$montSemiBold: "montserratsemibold";
+$montBold: "montserratbold";
+
+.fieldError {
+  width: 100%;
+  //position: absolute;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+  margin-top: 4px;
+  font-size: $fontSize13;
+  color: $RED_ERROR;
+
+  span {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .error {
+    margin-bottom: 5px;
+    color: $RED_ERROR;
+  }
+
+  .success {
+    margin-bottom: 5px;
+    color: $GREEN_SUCCESSTXT;
+  }
+}

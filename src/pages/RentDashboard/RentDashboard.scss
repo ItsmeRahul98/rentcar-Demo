@@ -1,0 +1,173 @@
+@import "../../assets/scss/variables.scss";
+
+.dashboardMain {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  .logoTop {
+    width: 12%;
+    align-self: center;
+    margin-bottom: 70px;
+    .logo {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  .ul{
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    align-self: center;
+    width: 80%;
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      }
+      .divider{
+        width: 100%;
+    border: 1px solid #e6e6e6;
+    margin-top: 8px;
+      }
+    .cardView {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      padding: 130px;
+      .carTitle{
+        color: #728396;
+        position: absolute;
+        left: 35%;
+        top: 10%;
+      }
+      .rentTitle{
+        color: #728396;
+        position: absolute;
+        right: 33%;
+        top: 10%;
+      } 
+      .cardSec {
+        border: 1px solid #dddddd;
+        border-radius: 4px;
+        width: 100%;
+        margin: 10px 0 10px 0;
+        display: flex;
+        flex-direction: row;
+        .imgSec {
+          width: 30%;
+          height: 130px;
+          .carImg {
+            height: 100%;
+            width: 100%;
+          }
+        }
+
+        .content {
+          width: 70%;
+          flex-direction: row;
+          display: flex;
+          align-items: center;
+          padding: 0px 25px 0px 25px;
+          .carIcon {
+            width:80%;
+            .carName {
+              line-height: 2;
+              font-weight: 600;
+            }
+            .iconSec {display: flex;
+              .icon {
+                height: 15px;
+                filter: invert(55%) sepia(7%) saturate(1041%) hue-rotate(169deg)
+                  brightness(91%) contrast(88%);
+                  margin-right: 6px;
+              }
+              .eyedropper {
+                display: flex;
+                align-items: center;
+                margin-right: 50px;
+                color: #728396;
+
+              }
+              .seat { 
+                display: flex;
+                align-items: center;
+                color: #728396;
+              }
+            }
+          }
+
+          .priceSec {
+            width: 35%;
+            .price {
+              display: flex;
+              align-items: center;
+              .rupeesicon {
+                height: 15px;
+              }
+            }
+          }
+          .btnSec {
+            display: flex;
+            flex-direction: row;
+            width: 55%;
+            justify-content: space-between;
+            position: relative;
+            .btnComponentMain {
+              button {
+                padding: 8px 12px;
+                font-size: 14px;
+              }
+            }
+            .error{
+              position: absolute;
+              bottom: -20px;
+              font-size: $fontSize12;
+              color: $RED_ERROR;
+            }
+          }
+        }
+      }
+    }
+
+    .footer{
+      display: flex;
+      flex-direction: column;
+      .title{
+        font-size: 22px;
+        line-height: 3;
+      }
+      .addreess{
+        width: 30%;
+        margin-top: 10px;
+      }
+      .socialIcon{
+        display: flex;
+        flex-direction: row;
+        margin-top: 15px;
+        .socicon{
+          height: 18px;
+          margin-right: 50px;
+        }
+      }
+      .lastSec{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top:30px;
+        margin-bottom:30px;
+        .leftPart{
+span{
+  margin-right: 30px;  
+}
+        }
+        .rightPart{
+          span{
+            margin-right: 10px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
